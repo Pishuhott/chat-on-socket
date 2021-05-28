@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,900;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background: cadetblue;
+}
+
+.chat-container {
+    margin: 0 auto;
+    width: 1024px;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.chat__app {
+    width: 100%;
+    height: 80%;
+    background: darkcyan;
+    border-radius: 1rem;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, .35), 10px 10px 15px rgba(0, 0, 0, .35);
+}
+
+.chat__wrap {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: min-content;
+}
+
+input[type='text'] {
+    width: 190px;
+    height: 30px;
+    margin-right: 2rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    border-radius: 1rem;
+    border: none;
+    background: darkcyan;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, .35), inset -1px -1px 5px rgba(255, 255, 255, .35);
+}
+
+input[type='text']::placeholder {
+    color: #3b3b3b;
+}
+
+input[type='text']:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    border-radius: 1rem;
+    border: none;
+    background: darkcyan;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5), -1px -1px 5px rgba(255, 255, 255, .5);
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.header__btn-change-name {
+    width: max-content;
+    padding: 0 2rem;
+}
+
+button:hover {
+    color: white;
+}
+
+button:active {
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, .5), inset -1px -1px 5px rgba(255, 255, 255, .5);
+}
+
+.field__messages {
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, .5), inset -1px -1px 5px rgba(255, 255, 255, .5);
+    overflow: auto;
+}
+
+.feedback-text {
+    margin: 1rem;
+    height: 20px;
+    font-size: 1.6rem;
+    color: #212121;
+}
+
+.alert {
+    margin: 1rem;
+    height: max-content;
+}
+
+.alert-1 .user {
+    color: #FBCEB1;
+}
+
+.alert-2 .user {
+    color: #B5B8B1;
+}
+
+.alert-3 .user {
+    color: #CED23A;
+}
+
+.alert-4 .user {
+    color: #FFB02E;
+}
+
+.alert-5 .user {
+    color: #00541F;
+}
+
+.alert-6 .user {
+    color: #1164B4;
+}
+
+.time,
+.mess-user {
+    font-size: 1.6rem;
+}
+
+.user {
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+.time {
+    font-weight: 600;
+    color: darkred;
+}
+
+.footer {
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer__input-message {
+    width: 85%;
+}
