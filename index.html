@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat on socket</title>
+</head>
+<body>
+<div class="chat-container">
+    <h1>Chat App</h1>
+    <div class="chat__app">
+        <div class="chat__wrap">
+            <div class="header">
+                <div class="header__user">
+                    <input id="userName" class="header__input-name" type="text" placeholder="Anonymous" minlength="3"
+                           maxlength="15">
+                    <button id="sendUserName" class="header__btn-change-name">Change name</button>
+                </div>
+            </div>
+
+            <div id="fieldMess" class="field__messages">
+                <div id="feedback" class="feedback"></div>
+                <div id="allMess" class="messages">
+                </div>
+            </div>
+
+            <div id="messForm" class="footer">
+                <input id="userMess" class="footer__input-message" type="text" placeholder="Write a message..."
+                       maxlength="80">
+                <button id="sendMess" class="footer__btn-message">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="chat.js"></script>
+</body>
+</html>
